@@ -160,15 +160,76 @@ nav {
     text-align: center;
 }
 
-/* Books Preview Section */
-.books-preview {
+/* Books Section */
+.books-section {
     background-color: var(--bg-secondary);
     padding: 4rem 2rem;
     margin: 4rem -2rem 0;
 }
 
-.books-preview p {
-    margin-bottom: 2rem;
+.books-intro {
+    margin-bottom: 3rem;
+    max-width: 700px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.book-card {
+    text-align: center;
+}
+
+.book-card.featured {
+    transform: scale(1.05);
+}
+
+.book-cover {
+    width: 180px;
+    height: 270px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin: 0 auto 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.book-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.view-library {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.view-library:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .book-card.featured {
+        transform: scale(1);
+    }
 }
 
 /* Contact Section */
