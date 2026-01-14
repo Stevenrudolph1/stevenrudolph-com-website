@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Books — Steven Rudolph</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 60px 40px;
+      background: #fafafa;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .intro {
+      max-width: 700px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    .highlight {
+      margin-bottom: 70px;
+    }
+
+    .highlight h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .highlight-card {
+      display: flex;
+      gap: 30px;
+      max-width: 900px;
+      align-items: flex-start;
+    }
+
+    .cover {
+      width: 180px;
+      height: 270px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .book-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .book-info p {
+      margin: 0;
+      line-height: 1.6;
+      color: #444;
+      max-width: 520px;
+    }
+
+    .library {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 40px 30px;
+      max-width: 1000px;
+    }
+
+    .book {
+      text-align: left;
+    }
+
+    .book-title {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 700px) {
+      .highlight-card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Books</h1>
+
+  <div class="intro">
+    These books explore how people sustain engagement, how frameworks shape perception,
+    and where well-intentioned systems quietly begin to cost more than they return.
+  </div>
+
+  <!-- Highlighted Book -->
+  <section class="highlight">
+    <h2>Featured</h2>
+
+    <div class="highlight-card">
+      <div class="cover">6×9 Cover<br>Placeholder</div>
+
+      <div class="book-info">
+        <h3>Renergence</h3>
+        <p>
+          Renergence names the difference between what energizes us at the start
+          and what continues to return enough over time.
+          It is not a book about motivation, habits, or resilience.
+          It is about structural sustainability—why some engagements quietly deplete,
+          even when nothing is "wrong."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library -->
+  <section>
+    <h2>Library</h2>
+
+    <div class="library">
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">When We Stop Seeing People</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Lenses</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Multiple Natures</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">The Making of Multiple Natures</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Renergence</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Designing for Renergence</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Renergence for Couples</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">Journeys: Living What You See</div>
+      </div>
+
+      <div class="book">
+        <div class="cover">6×9</div>
+        <div class="book-title">The Conditions of Renergence</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
