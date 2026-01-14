@@ -9,64 +9,69 @@
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 60px 40px;
+      padding: 0;
       background: #fafafa;
       color: #111;
+    }
+
+    .content {
+      padding: 60px 40px;
     }
 
     h1 {
       font-size: 2.2rem;
       margin-bottom: 10px;
       font-weight: 600;
+      text-align: center;
     }
 
     .intro {
       max-width: 700px;
       font-size: 1.05rem;
       line-height: 1.6;
-      margin-bottom: 50px;
+      margin: 0 auto 50px;
       color: #333;
+      text-align: center;
     }
 
-    .highlight {
-      margin-bottom: 70px;
+    .hero {
+      background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+      color: white;
+      padding: 100px 40px;
+      margin-bottom: 80px;
+      text-align: center;
     }
 
-    .highlight h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
-
-    .highlight-card {
-      display: flex;
-      gap: 30px;
+    .hero-content {
       max-width: 900px;
-      align-items: flex-start;
+      margin: 0 auto;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin: 0;
+      opacity: 0.95;
     }
 
     .cover {
       width: 180px;
       height: 270px;
-      background: #ddd;
+      background: rgba(255, 255, 255, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #666;
+      color: rgba(255, 255, 255, 0.6);
       font-size: 0.85rem;
       flex-shrink: 0;
-    }
-
-    .book-info h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
-
-    .book-info p {
-      margin: 0;
-      line-height: 1.6;
-      color: #444;
-      max-width: 520px;
+      margin: 0 auto 30px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
     }
 
     .library {
@@ -74,10 +79,24 @@
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 40px 30px;
       max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .library h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 40px;
+      grid-column: 1 / -1;
     }
 
     .book {
-      text-align: left;
+      text-align: center;
+    }
+
+    .book .cover {
+      background: #ddd;
+      color: #666;
+      border: none;
     }
 
     .book-title {
@@ -88,8 +107,16 @@
     }
 
     @media (max-width: 700px) {
-      .highlight-card {
-        flex-direction: column;
+      .hero {
+        padding: 60px 30px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
       }
     }
   </style>
@@ -97,86 +124,68 @@
 
 <body>
 
-  <h1>Books</h1>
-
-  <div class="intro">
-    These books explore how people sustain engagement, how frameworks shape perception,
-    and where well-intentioned systems quietly begin to cost more than they return.
-  </div>
-
-  <!-- Highlighted Book -->
-  <section class="highlight">
-    <h2>Featured</h2>
-
-    <div class="highlight-card">
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
       <div class="cover">6×9 Cover<br>Placeholder</div>
-
-      <div class="book-info">
-        <h3>Renergence</h3>
-        <p>
-          Renergence names the difference between what energizes us at the start
-          and what continues to return enough over time.
-          It is not a book about motivation, habits, or resilience.
-          It is about structural sustainability—why some engagements quietly deplete,
-          even when nothing is "wrong."
-        </p>
-      </div>
+      <h2>Renergence</h2>
+      <p>
+        Renergence names the difference between what energizes us at the start
+        and what continues to return enough over time.
+        It is not a book about motivation, habits, or resilience.
+        It is about structural sustainability—why some engagements quietly deplete,
+        even when nothing is "wrong."
+      </p>
     </div>
   </section>
 
-  <!-- Library -->
-  <section>
-    <h2>Library</h2>
+  <!-- Content -->
+  <div class="content">
+    <h1>Books</h1>
 
-    <div class="library">
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">When We Stop Seeing People</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Lenses</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Multiple Natures</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">The Making of Multiple Natures</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Renergence</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Designing for Renergence</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Renergence for Couples</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">Journeys: Living What You See</div>
-      </div>
-
-      <div class="book">
-        <div class="cover">6×9</div>
-        <div class="book-title">The Conditions of Renergence</div>
-      </div>
-
+    <div class="intro">
+      These books explore how people sustain engagement, how frameworks shape perception,
+      and where well-intentioned systems quietly begin to cost more than they return.
     </div>
-  </section>
+
+    <!-- Library -->
+    <section>
+      <div class="library">
+        <h2>Library</h2>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">When We Stop Seeing People</div>
+        </div>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">Lenses</div>
+        </div>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">Multiple Natures</div>
+        </div>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">The Making of Multiple Natures</div>
+        </div>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">Renergence</div>
+        </div>
+
+        <div class="book">
+          <div class="cover">6×9</div>
+          <div class="book-title">Journeys: Living What You See</div>
+        </div>
+
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
