@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Steven Rudolph - Software Engineer & Developer">
+    <meta name="description" content="Steven Rudolph">
     <title>Steven Rudolph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <nav>
-                <div class="logo">SR</div>
+            <nav style="justify-content: center;">
                 <ul class="nav-links">
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#tools">Tools</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="books/">Books</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -23,11 +26,41 @@
         <main>
             <section class="hero">
                 <h1>Steven Rudolph</h1>
-                <p class="tagline">Author & Designer</p>
-                <p class="hero-description">
-                    Exploring how people sustain engagement, how frameworks shape perception,
-                    and where well-intentioned systems quietly begin to cost more than they return.
+            </section>
+
+            <section id="books" class="section books-section" style="text-align: center;">
+                <h2>Books</h2>
+
+                <div style="max-width: 500px; margin: 0 auto;">
+                    <img src="books/covers/perception.jpg" alt="Perception book cover" style="width: 220px; height: auto; box-shadow: 0 6px 30px rgba(0,0,0,0.12); margin-bottom: 25px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Perception</h3>
+                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 20px;">Six Inquiries into the Way Things Appear</p>
+                    <p style="font-size: 1rem; line-height: 1.7; color: #444; margin-bottom: 25px;">
+                        What happens when we stop to examine the very act of seeing? Six inquiries into the relationship between observer and observed.
+                    </p>
+                    <a href="#" style="display: inline-block; padding: 12px 28px; background: #5D4E37; color: white; text-decoration: none; font-weight: 500; border-radius: 4px; font-size: 0.95rem;">Buy on Amazon</a>
+                </div>
+
+                <p style="margin-top: 50px; font-size: 0.9rem; color: #999;">
+                    <strong style="color: #666;">More books in development:</strong><br>
+                    Renergence · When We Stop Seeing People · Multiple Natures
                 </p>
+            </section>
+
+            <section id="tools" class="section tools-section">
+                <h2>Tools</h2>
+
+                <div class="tools-list">
+                    <div class="tool-item">
+                        <a href="https://www.multiplenatures.com/mnmapper" target="_blank" rel="noopener noreferrer">MN Mapper (MNTEST)</a>
+                        <span class="tool-desc">— A tool for making patterns of engagement visible.</span>
+                    </div>
+
+                    <div class="tool-item">
+                        <a href="https://www.xavigate.com" target="_blank" rel="noopener noreferrer">Xavigate</a>
+                        <span class="tool-desc">— A platform for navigating alignment in life, work, and organizations.</span>
+                    </div>
+                </div>
             </section>
 
             <section id="about" class="section">
@@ -37,28 +70,6 @@
                     within the systems we build and inhabit. My work examines the often-invisible costs
                     of frameworks that begin with good intentions but drift toward depletion.
                 </p>
-            </section>
-
-            <section id="books" class="section books-section">
-                <h2>Books</h2>
-                <p class="books-intro">
-                    A collection of explorations into sustainability, perception, and the hidden costs of structure.
-                </p>
-                <div class="books-grid">
-                    <div class="book-card featured">
-                        <div class="book-cover">6×9</div>
-                        <h3>Renergence</h3>
-                    </div>
-                    <div class="book-card">
-                        <div class="book-cover">6×9</div>
-                        <h3>When We Stop Seeing People</h3>
-                    </div>
-                    <div class="book-card">
-                        <div class="book-cover">6×9</div>
-                        <h3>Lenses</h3>
-                    </div>
-                </div>
-                <a href="books/" class="view-library">View the full library →</a>
             </section>
 
             <section id="contact" class="section">
@@ -72,22 +83,15 @@
                         </svg>
                         Email
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                        LinkedIn
-                    </a>
                 </div>
             </section>
         </main>
 
         <footer>
             <nav class="footer-nav">
-                <a href="index.html">Home</a>
-                <a href="books/">Books</a>
+                <a href="#">Home</a>
+                <a href="#books">Books</a>
+                <a href="#tools">Tools</a>
                 <a href="mailto:steven@multiplenatures.com">Contact</a>
             </nav>
             <p>&copy; 2026 Steven Rudolph. All rights reserved.</p>

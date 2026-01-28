@@ -22,3 +22,4 @@ All covers are 6×9 proportions (180px × 270px) ready to swap for actual PNGs.
 
 This reads as a **library**, not a shop. Authority on quiet mode.
 
+
